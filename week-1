@@ -5,3 +5,16 @@ TASK 1
   phone = input("Your phone number?")
   print ("Your first name, last name" + l_name +  " " + f_name,"Your age " + str(age) ,"Your phone number "+ phone, sep= "\n")
 TASK 2
+  a,b,c = input().split()
+  print(max(int(a),int(b),int(c)) - min(int(a),int(b),int(c)))
+TASK 3
+  A = input()
+  print(A,round((float(A) - int(float(A))) * 100) ,int(float(A))/100)
+TASK 4
+  N = int(input())
+  print((1+N)/2*N)
+TASK 5
+  N = int(input())
+  print( ((N//2)-8)//5)
+TASK 6 
+  
