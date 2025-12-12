@@ -1,0 +1,4 @@
+l_name, f_name = input("Your last name, first name?").split()
+age = int(input("How old are you?"))
+phone = input("Your phone number?")
+print ("Your first name, last name" + l_name +  " " + f_name,"Your age " + str(age) ,"Your phone number "+ phone, sep= "\n")
