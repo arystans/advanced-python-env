@@ -12,7 +12,7 @@ TASK 3
   print(A,round((float(A) - int(float(A))) * 100) ,int(float(A))/100)
 TASK 4
   N = int(input())
-  print((1+N)/2*N)
+  print((1+N)*N/2)
 TASK 5
   N = int(input())
   print( ((N//2)-8)//5)
