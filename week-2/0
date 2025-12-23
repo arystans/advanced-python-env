@@ -1,0 +1,124 @@
+# 1
+# s = input().strip()
+# c = 0
+# for i in range(len(s)):
+#     if s[i:i+5] == ">>-->":
+#         c += 1
+#     if s[i:i+5] == "<--<<":
+#         c += 1
+# print(c)
+import operator
+
+#2
+# a = input().strip()
+# b = input().strip()
+#
+# bb = b + b
+# m = len(b)
+# c = 0
+#
+# for i in range(len(a) - m + 1):
+#     sub = a[i:i+m]
+#     if sub in bb:
+#         c += 1
+#
+# print(c)
+
+#3
+# s = input().strip()
+# a, op, b, _, c = s
+# def val(x):
+#     return int(x) if x != 'x' else None
+# if a == 'x':
+#     b, c = int(b), int(c)
+#     x = c - b if op == '+' else c + b
+# elif b == 'x':
+#     a, c = int(a), int(c)
+#     x = c - a if op == '+' else a - c
+# else:  # c == 'x'
+#     a, b = int(a), int(b)
+#     x = a + b if op == '+' else a - b
+# print(x)
+
+#4
+# n, m = map(int, input().split())
+# s = input().strip()
+# subs = set()
+# for i in range(n - m + 1):
+#     subs.add(s[i:i+m])
+# print(len(subs))
+
+#5
+# allowed = "ABCEHKMOPTXY"
+# n = int(input())
+# for _ in range(n):
+#     p = input().strip()
+#     ok = True
+#     if len(p) != 6:
+#         ok = False
+#     elif p[0] not in allowed:
+#         ok = False
+#     elif not p[1:4].isdigit():
+#         ok = False
+#     elif p[4] not in allowed or p[5] not in allowed:
+#         ok = False
+#     print("Yes" if ok else "No")
+
+#6
+# def all_eq(lst):
+#     max_len = 0
+#     for s in lst:
+#         if len(s) > max_len:
+#             max_len = len(s)
+#     r = []
+#     for s in lst:
+#         r.append(s + "_" * (max_len - len(s)))
+#     return r
+#
+# n = input()
+# lst = []
+# for i in range(int(n)):
+#     lst.append(input())
+# all_eq(lst)
+
+#7
+# items = input().split()
+# freq = {}
+# for item in items:
+#     if item in freq:
+#         freq[item] += 1
+#     else:
+#         freq[item] = 1
+# print("Purchase frequency:")
+# for k in freq:
+#     print(k, freq[k])
+# max_item = None
+# max_count = 0
+# for k in freq:
+#     if freq[k] > max_count:
+#         max_count = freq[k]
+#         max_item = k
+# print("\nMost popular item:", max_item)
+# print("\nPurchased once:")
+# for k in freq:
+#     if freq[k] == 1:
+#         print(k, end=" ")
+# sorted_items = sorted(freq.items(), key=lambda x: x[1], reverse=True)
+# print("\nSorted by frequency :")
+# for item, count in sorted_items:
+#     print(item, count)
+
+
+#8
+# s1 = input().strip()
+# s2 = input().strip()
+#
+# if len(s1) != len(s2):
+#     print("NO")
+# else:
+#     ok = True
+#     for ch in s1:
+#         if s1.count(ch) != s2.count(ch):
+#             ok = False
+#             break
+#     print("YES" if ok else "NO")
