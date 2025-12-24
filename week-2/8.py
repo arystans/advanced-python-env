@@ -1,12 +1,7 @@
-s1 = input().strip()
-s2 = input().strip()
+S1 = input()
+S2 = input()
 
-if len(s1) != len(s2):
-    print("NO")
+if sorted(S1) == sorted(S2):
+    print("YES")
 else:
-    ok = True
-    for ch in s1:
-        if s1.count(ch) != s2.count(ch):
-            ok = False
-            break
-    print("YES" if ok else "NO")
+    print("NO")
