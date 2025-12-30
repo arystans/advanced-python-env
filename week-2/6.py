@@ -1,4 +1,4 @@
-ef all_eq(lst):
+def all_eq(lst):
     max_len = 0
     for s in lst:
         if len(s) > max_len:

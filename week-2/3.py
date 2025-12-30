@@ -1,7 +1,5 @@
 s = input().strip()
 a, op, b, _, c = s
-def val(x):
-    return int(x) if x != 'x' else None
 if a == 'x':
     b, c = int(b), int(c)
     x = c - b if op == '+' else c + b
