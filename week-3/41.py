@@ -5,8 +5,8 @@ def gcd(a, b):
 
 A, B, C, D = input().split()
 
-n = int(A) * int(D) - int(B) * int(C)
-m = int(B) * int(D)
+n = int(A) * int(D)
+m = int(B) * int(C)
 
 g = gcd(abs(n), m)
 print(n // g, "/", m // g)
