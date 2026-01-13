@@ -8,12 +8,12 @@ class Person:
 
 
 class Student(Person):
-    def __init__(self, name, student_id):
+    def __init__(self, name, s_id):
         super().__init__(name)
-        self.student_id = student_id
+        self.s_id = s_id
 
     def get_info(self):  # polymorphism
-        return f"Student name: {self._name}, ID: {self.student_id}"
+        return f"Student name: {self._name}, ID: {self.s_id}"
 
 
 person = Person("John")

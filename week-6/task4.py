@@ -21,7 +21,7 @@ class Manager(Employee):
         return self.bonus
 
 
-def print_employee_info(employees):
+def eeeinfo(employees):
     for emp in employees:
         print(f"Role: {emp.get_role()}, Salary: {emp.get_salary()}")
 
@@ -31,4 +31,4 @@ employees = [
     Manager(5000, 1000)
 ]
 
-print_employee_info(employees)
+eeeinfo(employees)

@@ -3,7 +3,7 @@ class BankAccount:
         self.__owner = owner
         self.__balance = balance
 
-    def deposit(self, amount):
+    def dep(self, amount):
         if amount <= 0:
             raise ValueError("Deposit amount must be positive")
         self.__balance += amount
@@ -13,11 +13,13 @@ class BankAccount:
             raise ValueError("Insufficient funds")
         self.__balance -= amount
 
-    def get_balance(self):
+    def balanc(self):
         return self.__balance
 
 
 account = BankAccount("Alice", 1000)
-account.deposit(500)
-account.withdraw(300)
-print(account.get_balance())
+d = int(input("Enter your deposit amount: "))
+account.dep(d)
+w = int(input("Enter your withdrawal amount: "))
+account.withdraw(w)
+print(account.balanc())
