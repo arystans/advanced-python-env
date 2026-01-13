@@ -23,7 +23,7 @@ class Manager(Employee):
 
 def eeeinfo(employees):
     for emp in employees:
-        print(f"Role: {emp.get_role()}, Salary: {emp.get_salary()}")
+        print("Role: "+ emp.get_role() + "Salary: " + emp.get_salary())
 
 
 employees = [
