@@ -21,14 +21,24 @@ class Manager(Employee):
         return self.bonus
 
 
-def eeeinfo(employees):
+def winfo(employees):
     for emp in employees:
-        print("Role: "+ emp.get_role() + "Salary: " + emp.get_salary())
+        print("Role: " + emp.get_role() + " Salary: " + str(emp.get_salary()))
 
 
-employees = [
-    Employee(3000000),
-    Manager(500000, 10000)
-]
+employees = []
 
-eeeinfo(employees)
+n = int(input("How many employees? "))
+
+for i in range(n):
+    role = input("Enter role (employee/manager): ").lower()
+    salary = int(input("Enter salary: \n"))
+
+    if role == "manager":
+        bonus = int(input("Enter bonus: "))
+        employees.append(Manager(salary, bonus))
+    else:
+        employees.append(Employee(salary))
+
+winfo(employees)
+print(Manager.get_bonus(self=employees[0]))

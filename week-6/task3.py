@@ -1,7 +1,7 @@
 #OOP
 class Person:
     def __init__(self, name):
-        self._name = name  # encapsulation
+        self._name = name
 
     def get_info(self):
         return f"Persons name: {self._name}"
@@ -12,7 +12,7 @@ class Student(Person):
         super().__init__(name)
         self.s_id = s_id
 
-    def get_info(self):  # polymorphism
+    def get_info(self):
         return f"Students name: {self._name}, ID: {self.s_id}"
 
 

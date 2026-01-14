@@ -10,10 +10,10 @@ class BankAccount:
 
     def withdraw(self, amount):
         if amount > self.__balance:
-            raise ValueError("Noeffective funds")
+            raise ValueError("No funds")
         self.__balance -= amount
 
-    def balanc(self):
+    def balance(self):
         return self.__balance
 
 
@@ -22,4 +22,4 @@ d = int(input("Enter your deposit amount: "))
 account.dep(d)
 w = int(input("Enter your withdrawal amount: "))
 account.withdraw(w)
-print(account.balanc())
+print(account.balance())
