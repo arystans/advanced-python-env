@@ -27,8 +27,8 @@ def eeeinfo(employees):
 
 
 employees = [
-    Employee(3000),
-    Manager(5000, 1000)
+    Employee(3000000),
+    Manager(500000, 10000)
 ]
 
 eeeinfo(employees)

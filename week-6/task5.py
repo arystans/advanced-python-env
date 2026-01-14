@@ -5,12 +5,12 @@ class BankAccount:
 
     def dep(self, amount):
         if amount <= 0:
-            raise ValueError("Deposit amount must be positive")
+            raise ValueError("Deposit must be positive")
         self.__balance += amount
 
     def withdraw(self, amount):
         if amount > self.__balance:
-            raise ValueError("Insufficient funds")
+            raise ValueError("Noeffective funds")
         self.__balance -= amount
 
     def balanc(self):

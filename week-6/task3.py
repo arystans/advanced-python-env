@@ -4,7 +4,7 @@ class Person:
         self._name = name  # encapsulation
 
     def get_info(self):
-        return f"Person name: {self._name}"
+        return f"Persons name: {self._name}"
 
 
 class Student(Person):
@@ -13,7 +13,7 @@ class Student(Person):
         self.s_id = s_id
 
     def get_info(self):  # polymorphism
-        return f"Student name: {self._name}, ID: {self.s_id}"
+        return f"Students name: {self._name}, ID: {self.s_id}"
 
 
 person = Person("John")
