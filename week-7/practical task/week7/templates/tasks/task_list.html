@@ -1,0 +1,22 @@
+<h1>To‑Do List</h1>
+<a href="{% url 'task_create' %}">➕ Add Task</a>
+
+
+<ul>
+{% for task in tasks %}
+    <li>
+        {% if task.is_completed %}
+            <s>{{ task.title }}</s>
+        {% else %}
+            {{ task.title }}
+        {% endif %}
+        ({{ task.created_at|date:"Y-m-d H:i" }})
+
+
+        <a href="{% url 'task_update' task.id %}">✏️ Edit</a>
+        <a href="{% url 'task_delete' task.id %}">🗑 Delete</a>
+    </li>
+{% empty %}
+    <li>No tasks yet.</li>
+{% endfor %}
+</ul>

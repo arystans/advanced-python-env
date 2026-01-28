@@ -1,0 +1,31 @@
+Practical Task Week 7
+
+
+Create a simple To-Do List web application using Django that allows users to Create, Read, Update, and Delete (CRUD) tasks. This project will help you understand Django models, views, templates, and URL routing.
+1. Task Model
+Each task should contain:
+title (short text)
+description (optional text)
+is_completed (boolean)
+created_at (date & time)
+2. Create Task
+A form to add a new task
+Validate that the title is required
+Redirect to the task list after successful creation
+3. Read Tasks
+Display a list of all tasks
+Show task title, status (completed / not completed), and creation date
+Completed tasks should be visually distinguishable (e.g., strikethrough text)
+4. Update Task
+Ability to:
+Edit task title and description
+Mark a task as completed or incomplete
+5. Delete Task
+Add a delete button for each task
+Show a confirmation page before deletion
+
+
+
+
+
+
